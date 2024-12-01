@@ -1,0 +1,93 @@
+{
+    // Python
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+      },
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.formatOnSave": true
+    },
+  
+    // TypeScript
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.formatOnSave": true,
+      "editor.rulers": [100]
+    },
+  
+    // TypeScript+React
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.formatOnSave": true,
+      "editor.rulers": [100]
+    },
+  
+    "prettier.configPath": "prettier.config.js",
+    "prettier.requireConfig": true,
+    "prettier.useEditorConfig": false,
+  
+    // Deno configuration (unchanged but scoped to supabase/functions)
+    "deno.enablePaths": [
+      "supabase/functions"
+    ],
+    "deno.lint": true,
+    "deno.unstable": [
+      "bare-node-builtins",
+      "byonm",
+      "sloppy-imports",
+      "unsafe-proto",
+      "webgpu",
+      "broadcast-channel",
+      "worker-options",
+      "cron",
+      "kv",
+      "ffi",
+      "fs",
+      "http",
+      "net"
+    ],
+    "deno.enable": true,
+  
+    // Ruff
+    "ruff.fixAll": true,
+    "ruff.organizeImports": true,
+  
+    // Black
+    "black-formatter.args": [
+      "--config=pyproject.toml"
+    ],
+  
+    // TypeScript
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    
+    // Global editor settings
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+  
+    // Spell-checking (unchanged)
+    "cSpell.words": [
+      "aiohttp",
+      "capsys",
+      "creds",
+      "jsonlogger",
+      "levelname",
+      "mgid",
+      "mgids",
+      "msgspec",
+      "scoreigami",
+      "scorigami",
+      "stackoverflow"
+    ]
+  }

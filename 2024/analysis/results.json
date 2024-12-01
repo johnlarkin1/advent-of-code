@@ -1,0 +1,16 @@
+{
+  "day01": {
+    "python": {
+      "avg_time": "201.845µs",
+      "complexity": "O(n log n)",
+      "timing_iterations": 10,
+      "notes": "Sorting implementation. Faster than heap solution."
+    },
+    "rust": {
+      "avg_time": "643.573µs",
+      "complexity": "O(n log n)",
+      "timing_iterations": 10,
+      "notes": "Sorting implementation. Easy to write."
+    }
+  }
+}
