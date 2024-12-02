@@ -6,7 +6,7 @@ cd rust
 cargo build --release >/dev/null 2>&1 || { echo "Rust build failed"; exit 1; }
 rust_times=()
 for i in {1..10}; do
-    time=$(./target/release/rust day01 | sed -n 's/.*day01: \([0-9.]*\)µs/\1/p')
+    time=$(./target/release/rust day02 | sed -n 's/.*day02: \([0-9.]*\)µs/\1/p')
     rust_times+=("$time")
 done
 cd ../
@@ -19,7 +19,7 @@ echo "Rust average time: ${rust_avg}µs"
 echo "Measuring Python solution..."
 python_times=()
 for i in {1..10}; do
-    time=$(python ./python/day01.py | sed -n 's/.*day01: \([0-9.]*\) µs/\1/p')
+    time=$(python ./python/day02.py | sed -n 's/.*day02: \([0-9.]*\) µs/\1/p')
     python_times+=("$time")
 done
 

@@ -12,5 +12,19 @@
       "timing_iterations": 10,
       "notes": "Sorting implementation. Easy to write."
     }
+  },
+  "day02": {
+    "python": {
+      "avg_time": "316.716µs",
+      "complexity": "O(n * k^2) where k is the number of ints per line",
+      "timing_iterations": 10,
+      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
+    },
+    "rust": {
+      "avg_time": "2284.22µs",
+      "complexity": "O(n * k^2) where k is the number of ints per line",
+      "timing_iterations": 10,
+      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
+    }
   }
 }

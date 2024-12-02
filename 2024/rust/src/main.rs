@@ -2,6 +2,7 @@ use std::env;
 use std::time::Instant;
 
 mod day01;
+mod day02;
 mod solution;
 
 use crate::solution::Solution;
@@ -22,6 +23,7 @@ fn main() {
 
     match args[1].as_str() {
         "day01" => run_with_timing::<day01::Day01>("day01"),
+        "day02" => run_with_timing::<day02::Day02>("day02"),
         _ => eprintln!("Day not implemented!"),
     }
 }

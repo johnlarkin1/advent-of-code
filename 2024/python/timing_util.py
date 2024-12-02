@@ -19,7 +19,8 @@ class TimeUnit(str, Enum):
 
 def time_function(func: Callable[..., Any], *args, **kwargs) -> float:
     start_time = time.perf_counter()
-    func(*args, **kwargs)
+    rez = func(*args, **kwargs)
+    print("rez", rez)
     end_time = time.perf_counter()
     return end_time - start_time
 
