@@ -26,5 +26,24 @@
       "timing_iterations": 10,
       "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
     }
-  }
+  },
+  "day03": {
+    "python": {
+      "avg_time": {
+        "pt1_regex": "294.554µs",
+        "pt1_iter": "1569.604µs", 
+        "pt2_regex": "453.225µs",
+        "pt2_iter": "3519.283µs"
+      },
+      "complexity": "O(n)",
+      "timing_iterations": 10,
+      "notes": "Regex implementation significantly faster than iterative approach. Part 2 adds ~50% overhead."
+    },
+    "rust": {
+      "avg_time": "1.002ms",
+      "complexity": "O(n)",
+      "timing_iterations": 10,
+      "notes": "Used a set to store the visited coordinates."
+    }
+  },
 }
