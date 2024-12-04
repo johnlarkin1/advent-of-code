@@ -4,6 +4,7 @@ use std::time::Instant;
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 mod solution;
 
 use crate::solution::Solution;
@@ -26,6 +27,7 @@ fn main() {
         "day01" => run_with_timing::<day01::Day01>("day01"),
         "day02" => run_with_timing::<day02::Day02>("day02"),
         "day03" => run_with_timing::<day03::Day03>("day03"),
+        "day04" => run_with_timing::<day04::Day04>("day04"),
         _ => eprintln!("Day not implemented!"),
     }
 }

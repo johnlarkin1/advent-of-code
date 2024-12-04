@@ -115,7 +115,7 @@ if __name__ == "__main__":
     curr_dir = Path(__file__).parent
     input_file = curr_dir.parent / "inputs" / "day03.txt"
     time_solution(
-        "day02",
+        "day03",
         soln,
         input_file,
         method=TimingOptions.TIMEIT,

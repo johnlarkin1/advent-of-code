@@ -2,30 +2,28 @@
   "day01": {
     "python": {
       "avg_time": "201.845µs",
-      "complexity": "O(n log n)",
       "timing_iterations": 10,
       "notes": "Sorting implementation. Faster than heap solution."
     },
     "rust": {
       "avg_time": "643.573µs",
-      "complexity": "O(n log n)",
       "timing_iterations": 10,
       "notes": "Sorting implementation. Easy to write."
-    }
+    },
+    "complexity": "O(n log n)"
   },
   "day02": {
     "python": {
       "avg_time": "316.716µs",
-      "complexity": "O(n * k^2) where k is the number of ints per line",
       "timing_iterations": 10,
       "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
     },
     "rust": {
       "avg_time": "2284.22µs",
-      "complexity": "O(n * k^2) where k is the number of ints per line",
       "timing_iterations": 10,
       "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
-    }
+    },
+    "complexity": "O(n * k^2) where k is the number of ints per line"
   },
   "day03": {
     "python": {
@@ -35,15 +33,31 @@
         "pt2_regex": "453.225µs",
         "pt2_iter": "3519.283µs"
       },
-      "complexity": "O(n)",
       "timing_iterations": 10,
       "notes": "Regex implementation significantly faster than iterative approach. Part 2 adds ~50% overhead."
     },
     "rust": {
       "avg_time": "1.002ms",
-      "complexity": "O(n)",
       "timing_iterations": 10,
       "notes": "Used a set to store the visited coordinates."
-    }
+    },
+    "complexity": "O(n)"
   },
+  "day04": {
+    "python": {
+      "avg_time": {
+        "pt1": "18.401ms",
+        "pt2": "5.001ms"
+      },
+      "notes": "not optimized"
+    },
+    "rust": {
+      "avg_time": {
+        "pt1": "n/a",
+        "pt2": "n/a"
+      },
+      "notes": "not optimized"
+    },
+    "complexity": "O(n * m) where n is the number of lines, m is the average length of each line"
+  }
 }
