@@ -53,8 +53,8 @@
     },
     "rust": {
       "avg_time": {
-        "pt1": "n/a",
-        "pt2": "n/a"
+        "pt1": "2.309542ms",
+        "pt2": "804.959µs"
       },
       "notes": "not optimized"
     },
