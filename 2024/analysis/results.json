@@ -59,5 +59,27 @@
       "notes": "not optimized"
     },
     "complexity": "O(n * m) where n is the number of lines, m is the average length of each line"
+  },
+  "day05": {
+    "python": {
+      "avg_time": {
+        "pt1": "1.039171ms",
+        "pt2": "0.797754ms"
+      },
+      "notes": "not optimized - need to calc big O"
+    },
+    "rust": {
+      "avg_time": "957.709µs",
+      "notes": "not optimized - need to calc big O"
+    }
+  },
+  "day06": {
+    "python": {
+      
+      "notes": "I did not like this one!! Was a non-trivial amount of time invested"
+    },
+    "rust": {
+      "notes": "not optimized - need to calc big O"
+    }
   }
 }
