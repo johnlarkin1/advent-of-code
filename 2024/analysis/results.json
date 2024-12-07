@@ -3,12 +3,14 @@
     "python": {
       "avg_time": "201.845µs",
       "timing_iterations": 10,
-      "notes": "Sorting implementation. Faster than heap solution."
+      "notes": "Sorting implementation. Faster than heap solution.",
+      "llm_assist": false
     },
     "rust": {
       "avg_time": "643.573µs",
       "timing_iterations": 10,
-      "notes": "Sorting implementation. Easy to write."
+      "notes": "Sorting implementation. Easy to write.",
+      "llm_assist": false
     },
     "complexity": "O(n log n)"
   },
@@ -16,12 +18,14 @@
     "python": {
       "avg_time": "316.716µs",
       "timing_iterations": 10,
-      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
+      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2.",
+      "llm_assist": false
     },
     "rust": {
       "avg_time": "2284.22µs",
       "timing_iterations": 10,
-      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2."
+      "notes": "Didn't really focus on the impl too much, just used part 1 for part 2.",
+      "llm_assist": false
     },
     "complexity": "O(n * k^2) where k is the number of ints per line"
   },
@@ -34,12 +38,14 @@
         "pt2_iter": "3519.283µs"
       },
       "timing_iterations": 10,
-      "notes": "Regex implementation significantly faster than iterative approach. Part 2 adds ~50% overhead."
+      "notes": "Regex implementation significantly faster than iterative approach. Part 2 adds ~50% overhead.",
+      "llm_assist": false
     },
     "rust": {
       "avg_time": "1.002ms",
       "timing_iterations": 10,
-      "notes": "Used a set to store the visited coordinates."
+      "notes": "Used a set to store the visited coordinates.",
+      "llm_assist": false
     },
     "complexity": "O(n)"
   },
@@ -49,14 +55,16 @@
         "pt1": "18.401ms",
         "pt2": "5.001ms"
       },
-      "notes": "not optimized"
+      "notes": "not optimized",
+      "llm_assist": false
     },
     "rust": {
       "avg_time": {
         "pt1": "2.309542ms",
         "pt2": "804.959µs"
       },
-      "notes": "not optimized"
+      "notes": "not optimized",
+      "llm_assist": false
     },
     "complexity": "O(n * m) where n is the number of lines, m is the average length of each line"
   },
@@ -66,20 +74,37 @@
         "pt1": "1.039171ms",
         "pt2": "0.797754ms"
       },
-      "notes": "not optimized - need to calc big O"
+      "notes": "not optimized - need to calc big O",
+      "llm_assist": false
     },
     "rust": {
       "avg_time": "957.709µs",
-      "notes": "not optimized - need to calc big O"
+      "notes": "not optimized - need to calc big O",
+      "llm_assist": false
     }
   },
   "day06": {
     "python": {
-      
-      "notes": "I did not like this one!! Was a non-trivial amount of time invested"
+      "avg_time": "6.682449s",
+      "notes": "I did not like this one!! Was a non-trivial amount of time invested",
+      "llm_assist": false
     },
     "rust": {
-      "notes": "not optimized - need to calc big O"
+      "avg_time": "2.034042s",
+      "notes": "not optimized - need to calc big O",
+      "llm_assist": true
+    }
+  },
+  "day07": {
+    "python": {
+      "avg_time": "11.631659s",
+      "notes": "not optimized - need to calc big O",
+      "llm_assist": false
+    },
+    "rust": {
+      "avg_time":  "2.143450333s",
+      "notes": "not optimized - need to calc big O",
+      "llm_assist": true
     }
   }
 }

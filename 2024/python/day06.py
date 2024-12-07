@@ -28,6 +28,8 @@ map.
 from pathlib import Path
 from typing import Literal
 
+from timing_util import time_solution
+
 GuardDirType = Literal["^", "v", "<", ">"]
 LocationType = tuple[int, int]
 
@@ -251,4 +253,4 @@ def soln(input_file: Path) -> tuple[int, int]:
 if __name__ == "__main__":
     curr_dir = Path(__file__).parent
     input_file = curr_dir.parent / "inputs" / "day06.txt"
-    print(soln(input_file))
+    time_solution("day06", soln, input_file)

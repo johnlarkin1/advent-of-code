@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate lazy_static;
+
 use std::env;
 use std::time::Instant;
 
@@ -6,6 +9,8 @@ mod day02;
 mod day03;
 mod day04;
 mod day05;
+mod day06;
+mod day07;
 mod solution;
 
 use crate::solution::Solution;
@@ -30,6 +35,8 @@ fn main() {
         "day03" => run_with_timing::<day03::Day03>("day03"),
         "day04" => run_with_timing::<day04::Day04>("day04"),
         "day05" => run_with_timing::<day05::Day05>("day05"),
+        "day06" => run_with_timing::<day06::Day06>("day06"),
+        "day07" => run_with_timing::<day07::Day07>("day07"),
         _ => eprintln!("Day not implemented!"),
     }
 }
