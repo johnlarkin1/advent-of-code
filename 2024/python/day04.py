@@ -14,9 +14,9 @@ My thinking is we can just parse this as a matrix and then iterate through.
 import sys
 from pathlib import Path
 
+from input_util import Matrix, parse_input_as_matrix
 from timing_util import TimeUnit, TimingOptions, time_solution
 
-Matrix = list[list[str]]
 TARGET = "XMAS"
 TARGET_PT2 = "MAS"
 
@@ -27,10 +27,6 @@ LEN_TARGET = len(TARGET)
 LEN_TARGET_PT2 = len(TARGET_PT2)
 
 TEST_MODE = False
-
-
-def parse_input_as_matrix(input_str: str) -> Matrix:
-    return [list(line) for line in input_str.split("\n") if line]
 
 
 def check_xmas_horizontal_fwd(curr_row_idx: int, curr_col_idx: int, matrix: Matrix) -> bool:

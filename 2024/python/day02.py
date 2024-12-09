@@ -1,5 +1,6 @@
 from pathlib import Path
 
+from input_util import Location
 from timing_util import TimeUnit, TimingOptions, time_solution
 
 
@@ -72,7 +73,7 @@ def is_report_safe_with_one_allowed(report_line: list[int]) -> bool:
     return False
 
 
-def soln(input_file: Path) -> tuple[int, int]:
+def soln(input_file: Path) -> Location:
     safe_reports = 0
     safe_reports_with_one_allowed = 0
     with open(input_file, "r") as f:

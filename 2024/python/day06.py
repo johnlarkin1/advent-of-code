@@ -31,7 +31,7 @@ from typing import Literal
 from timing_util import time_solution
 
 GuardDirType = Literal["^", "v", "<", ">"]
-LocationType = tuple[int, int]
+
 
 BLOCKER = "#"
 
