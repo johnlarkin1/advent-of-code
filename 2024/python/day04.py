@@ -149,7 +149,7 @@ def check_x_mas_x_shape(curr_row_idx: int, curr_col_idx: int, matrix: Matrix) ->
 def soln(input_file: Path) -> tuple[int, int]:
     with open(input_file, "r") as f:
         input_str = f.read()
-    matrix = parse_input_as_matrix(input_str)
+    matrix = parse_input_as_matrix(input_str, "str")
     total_xmas_count = 0
     total_xmas_xshape_count = 0
     for i in range(len(matrix)):

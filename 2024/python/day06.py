@@ -28,9 +28,11 @@ map.
 from pathlib import Path
 from typing import Literal
 
+from input_util import Matrix, parse_input_as_matrix
 from timing_util import time_solution
 
 GuardDirType = Literal["^", "v", "<", ">"]
+LocationType = tuple[int, int]
 
 
 BLOCKER = "#"
@@ -44,11 +46,7 @@ GUARD_NEXT_POSITIONS: dict[GuardDirType, LocationType] = {
 }
 
 
-def parse_input_as_matrix(input_str: str) -> list[list[str]]:
-    return [list(line) for line in input_str.split("\n") if line]
-
-
-def find_guard_starting_loc(matrix: list[list[str]]) -> tuple[LocationType, GuardDirType]:
+def find_guard_starting_loc(matrix: Matrix) -> tuple[LocationType, GuardDirType]:
     for row_idx, row in enumerate(matrix):
         for col_idx, cell in enumerate(row):
             if cell in GUARD_NEXT_POSITIONS:
@@ -79,7 +77,7 @@ def is_out_of_bounds(next_loc: LocationType, num_rows: int, num_cols: int) -> bo
     return row < 0 or row >= num_rows or col < 0 or col >= num_cols
 
 
-def is_guard_blocked(next_loc: LocationType, map: list[list[str]]) -> bool:
+def is_guard_blocked(next_loc: LocationType, map: Matrix) -> bool:
     return map[next_loc[0]][next_loc[1]] == "#"
 
 
@@ -192,9 +190,7 @@ def would_loop_with_blocker(guard_map: list[list[str]]) -> bool:
             guard_loc = next_loc
 
 
-def simulate_blocker_positions_from_visited_locs(
-    guard_map: list[list[str]], visited_locations: set[LocationType]
-) -> int:
+def simulate_blocker_positions_from_visited_locs(guard_map: Matrix, visited_locations: set[LocationType]) -> int:
     num_potential_blocking_spots = 0
     orig_map = guard_map
     for location in visited_locations:
@@ -212,7 +208,7 @@ def soln(input_file: Path) -> tuple[int, int]:
     we've visited in our matrix and then return the count of unique ones
     """
 
-    guard_map = parse_input_as_matrix(input_file.read_text())
+    guard_map = parse_input_as_matrix(input_file.read_text(), "int")
     num_rows = len(guard_map)
     num_cols = len(guard_map[0])
     guard_loc, guard_dir = find_guard_starting_loc(guard_map)

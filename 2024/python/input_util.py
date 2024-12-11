@@ -1,10 +1,26 @@
-Matrix = list[list[str]]
+from typing import List, Literal, TypeVar, Union, overload
+
 Coordinate = tuple[int, int]
+T = TypeVar("T", str, int)
+Matrix = List[List[T]]
+
+MatrixStr = Matrix[str]
+MatrixInt = Matrix[int]
 
 
-def parse_input_as_matrix(input_str: str) -> Matrix:
+@overload
+def parse_input_as_matrix(input_str: str, int_or_str: Literal["int"]) -> MatrixInt: ...
+
+
+@overload
+def parse_input_as_matrix(input_str: str, int_or_str: Literal["str"]) -> MatrixStr: ...
+
+
+def parse_input_as_matrix(input_str: str, int_or_str: Literal["int", "str"] = "str") -> Union[MatrixInt, MatrixStr]:
+    if int_or_str == "int":
+        return [[int(cell.strip()) for cell in list(line)] for line in input_str.split("\n") if line]
     return [list(line) for line in input_str.split("\n") if line]
 
 
-def matrix_to_string(matrix: Matrix) -> str:
-    return "\n".join("".join(row) for row in matrix)
+def matrix_to_string(matrix: Matrix[T]) -> str:
+    return "\n".join("".join(map(str, row)) for row in matrix)

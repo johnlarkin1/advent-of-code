@@ -131,7 +131,7 @@ def algo(matrix: Matrix) -> tuple[int, int]:
 
 
 def soln(input_file: Path) -> tuple[int, int]:
-    input_matrix = parse_input_as_matrix(input_file.read_text())
+    input_matrix = parse_input_as_matrix(input_file.read_text(), "str")
 
     pprint(input_matrix)
     num_antinodes, num_antinodes_with_resonance = algo(input_matrix)
