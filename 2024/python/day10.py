@@ -89,7 +89,7 @@ def dfs_explore(
                 continue
 
             if int(next_val) == int(curr_val) + 1:
-                total_paths += dfs_explore(matrix, next_loc, visited, target_locs, debug_path)[0]
+                total_paths += dfs_explore(matrix, next_loc, visited, target_locs, debug_path)[1]
 
     debug_path.pop()
     visited.remove(starting_loc)
