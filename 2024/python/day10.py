@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Literal
 
-from input_util import Matrix, parse_input_as_matrix
+from input_util import Matrix, is_in_bounds, parse_input_as_matrix
 
 DirKeyType = Literal["up", "down", "left", "right"]
 DirType = tuple[int, int]
@@ -47,10 +47,6 @@ def find_starting_locations(matrix) -> list[Coordinate]:
             if cell == STARTING_VAL:
                 starting_locs.append((row_idx, col_idx))
     return starting_locs
-
-
-def is_in_bounds(matrix: Matrix, loc: Coordinate) -> bool:
-    return loc[0] >= 0 and loc[0] < len(matrix) and loc[1] >= 0 and loc[1] < len(matrix[0])
 
 
 def can_find_target_from_loc(matrix: Matrix, loc: Coordinate) -> bool:

@@ -106,5 +106,8 @@
       "notes": "not optimized - need to calc big O",
       "llm_assist": true
     }
+  },
+  "day12": {
+    "notes": "one of my favorites i think... haven't worked that much with counting sides from polygons so kinda new"
   }
 }

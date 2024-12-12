@@ -24,3 +24,7 @@ def parse_input_as_matrix(input_str: str, int_or_str: Literal["int", "str"] = "s
 
 def matrix_to_string(matrix: Matrix[T]) -> str:
     return "\n".join("".join(map(str, row)) for row in matrix)
+
+
+def is_in_bounds(matrix: Matrix, loc: Coordinate) -> bool:
+    return loc[0] >= 0 and loc[0] < len(matrix) and loc[1] >= 0 and loc[1] < len(matrix[0])
