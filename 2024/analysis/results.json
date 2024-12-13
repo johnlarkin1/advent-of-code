@@ -108,6 +108,11 @@
     }
   },
   "day12": {
-    "notes": "one of my favorites i think... haven't worked that much with counting sides from polygons so kinda new"
+    "notes": "one of my favorites i think... haven't worked that much with counting sides from polygons so kinda new",
+    "favorite": true
+  },
+  "day13": {
+    "notes": "reminds me of an old google interview",
+    "favorite": true
   }
 }
