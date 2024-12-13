@@ -6,17 +6,30 @@ from input_util import Coordinate, Matrix, is_in_bounds, parse_input_as_matrix
 
 DirKeyType = Literal["up", "down", "left", "right"]
 DirType = tuple[int, int]
+EdgeType = tuple[Coordinate, DirKeyType]
+
 DIRECTIONS: dict[DirKeyType, DirType] = {
     "up": (-1, 0),
     "left": (0, -1),
     "down": (1, 0),
     "right": (0, 1),
 }
-NEXT_DIRECTION: dict[DirKeyType, DirKeyType] = {
+TOP_WALL_DIR_TO_NEXT_LOC_DIR: dict[DirKeyType, DirKeyType] = {
+    "up": "right",
+    "down": "left",
+    "right": "down",
+    "left": "up",
+}
+BOTTOM_WALL_DIR_TO_NEXT_LOC_DIR: dict[DirKeyType, DirKeyType] = {
+    "down": "right",
+    "left": "down",
+}
+
+WALL_LOC_TO_DIR: dict[DirKeyType, DirKeyType] = {
+    "up": "right",
     "right": "down",
     "down": "left",
     "left": "up",
-    "up": "right",
 }
 
 
@@ -26,30 +39,70 @@ class Region(TypedDict):
     sides: int
 
 
-def calculate_sides(region_edges: set[Coordinate]) -> int:
-    visited_edges = set()
-    sides = 0
-    curr_point = min(region_edges, key=lambda loc: (loc[0], loc[1]))
-    start_point = curr_point
-    curr_dir = "right"
+def rotate_direction_clockwise(d: DirKeyType) -> DirKeyType:
+    if d == "up":
+        return "right"
+    elif d == "right":
+        return "down"
+    elif d == "down":
+        return "left"
+    elif d == "left":
+        return "up"
 
+
+def walk_wall(curr_edge: EdgeType, region_edges: set[EdgeType], visited_edges: set[EdgeType]) -> int:
+    """
+    Ok this is just a huge pain in the ass and I can optimize it later, but have
+    struggled too long with the whole like directional and up and down bit
+    compared to just moving along a rail basically.
+    _______
+    ^ this is fine
+    x -> ... -> x
+    _______
+    ^ but counting this one for nested regions was fucking annoying
+    """
+    sides = 1
+
+    # we do know that we're at the top left most, so
+    # we should always progress top -> bottom
+    # we shoudl always progress left -> right
     while True:
-        curr_dir_vec = DIRECTIONS[curr_dir]
-        next_point = (curr_point[0] + curr_dir_vec[0], curr_point[1] + curr_dir_vec[1])
-        edge = (curr_point, next_point)
+        curr_loc, wall_loc = curr_edge
+        visited_edges.add(curr_edge)
+        region_edges.discard(curr_edge)
 
-        if edge not in visited_edges and next_point in region_edges:
-            visited_edges.add(edge)
-            curr_point = next_point
+        if wall_loc == "up" or wall_loc == "down":
+            next_loc = (curr_loc[0], curr_loc[1] + 1)
+            next_edge = (next_loc, wall_loc)
+            if next_edge in region_edges:
+                curr_edge = next_edge
+            else:
+                break
         else:
-            # Change direction if we hit a dead end or revisit
-            curr_dir = NEXT_DIRECTION[curr_dir]
-            sides += 1
-
-        if curr_point == start_point and curr_dir == "right":
-            break
+            next_loc = (curr_loc[0] + 1, curr_loc[1])
+            next_edge = (next_loc, wall_loc)
+            if next_edge in region_edges:
+                curr_edge = next_edge
+            else:
+                break
 
     return sides
+
+
+def calculate_sides_with_directions(region_key: str, region_edges: set[tuple[Coordinate, DirKeyType]]) -> int:
+    """
+    So now that we have the edges and the directions of the walls here's what we're going to do
+    """
+    visited_edges = set()
+    region_sides = 0
+
+    print(f"Exploring region: {region_key}")
+    while region_edges:
+        start_edge = min(region_edges, key=lambda edge: (edge[0][0], edge[0][1], edge[1]))
+        curr_edge = start_edge
+        wall_side_count = walk_wall(curr_edge, region_edges, visited_edges)
+        region_sides += wall_side_count
+    return region_sides
 
 
 def get_region_info(
@@ -63,21 +116,22 @@ def get_region_info(
 
     # Ok I think for part 2, we need to keep track of the direction we're going
     # and see when that changes to denote
-    region_edges: set[Coordinate] = set()
+    # ok and yeah for the edges, we should keep track of where the kinda wall was
+    region_edges: set[tuple[Coordinate, DirKeyType]] = set()
     explore_stack: list[Coordinate] = [start_loc]
     while explore_stack:
         curr_loc = explore_stack.pop()
-        for _, dir_vec in DIRECTIONS.items():
+        for dir_key, dir_vec in DIRECTIONS.items():
             neighbor = (curr_loc[0] + dir_vec[0], curr_loc[1] + dir_vec[1])
             if not is_in_bounds(matrix, neighbor):
                 region_info["perimeter"] += 1
-                region_edges.add(curr_loc)
+                region_edges.add((curr_loc, dir_key))
                 continue
 
             new_val = matrix[neighbor[0]][neighbor[1]]
             if neighbor in visited_farm_locations:
                 if new_val != curr_val:
-                    region_edges.add(curr_loc)
+                    region_edges.add((curr_loc, dir_key))
                     region_info["perimeter"] += 1
                 continue
 
@@ -86,10 +140,13 @@ def get_region_info(
                 visited_farm_locations.add(neighbor)
                 explore_stack.append(neighbor)
             else:
-                region_edges.add(curr_loc)
+                region_edges.add((curr_loc, dir_key))
                 region_info["perimeter"] += 1
 
-    region_info["sides"] = calculate_sides(region_edges)
+    print("Region edges:")
+    pprint(region_edges)
+
+    region_info["sides"] = calculate_sides_with_directions(curr_val, region_edges)
     return region_info
 
 
@@ -129,8 +186,8 @@ def soln(input_file: Path, debug: bool = True) -> tuple[int, int]:
 
 if __name__ == "__main__":
     curr_dir = Path(__file__).parent
-    input_file = curr_dir.parent / "inputs" / "day12_very_small.txt"
+    # input_file = curr_dir.parent / "inputs" / "day12_very_small.txt"
     # input_file = curr_dir.parent / "inputs" / "day12_small_pt2.txt"
     # input_file = curr_dir.parent / "inputs" / "day12_small.txt"
-    # input_file = curr_dir.parent / "inputs" / "day12.txt"
+    input_file = curr_dir.parent / "inputs" / "day12.txt"
     print(soln(input_file))
