@@ -114,5 +114,9 @@
   "day13": {
     "notes": "reminds me of an old google interview",
     "favorite": true
-  }
+  },
+  "day14": {
+    "notes": "the visualization is one of the best and the reddit thread was super interesting about entropy vs chinese remainder theorem",
+    "favorite": true
+  },
 }
