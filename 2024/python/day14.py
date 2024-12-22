@@ -53,7 +53,7 @@ def parse_robot_line(line: str) -> RobotInfo:
 
 
 def visualize_robot_map(
-    robot_map: list[list[str]], step: int, robot_ids: dict[tuple[int, int], list[str]] = None
+    robot_map: list[list[str]], step: int, robot_ids: dict[tuple[int, int], list[str]] | None = None
 ) -> None:
     print(f"Visualizing robot map at step {step}...")
     numeric_map = np.array([[int(cell) if cell != "." else 0 for cell in row] for row in robot_map])

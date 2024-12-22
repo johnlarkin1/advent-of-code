@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from typing import List, Literal, TypeVar, Union, overload
 
 Coordinate = tuple[int, int]
@@ -28,3 +29,15 @@ def matrix_to_string(matrix: Matrix[T]) -> str:
 
 def is_in_bounds(matrix: Matrix, loc: Coordinate) -> bool:
     return loc[0] >= 0 and loc[0] < len(matrix) and loc[1] >= 0 and loc[1] < len(matrix[0])
+
+
+@dataclass
+class Point:
+    x: int
+    y: int
+
+
+@dataclass
+class Delta:
+    dx: int
+    dy: int
