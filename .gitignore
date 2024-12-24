@@ -4,4 +4,6 @@ __pycache__
 *.pyc
 
 **/inputs/**
+!**/inputs/*.md
 **/prompts/**
+!**/prompts/README.md
