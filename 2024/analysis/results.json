@@ -119,4 +119,7 @@
     "notes": "the visualization is one of the best and the reddit thread was super interesting about entropy vs chinese remainder theorem",
     "favorite": true
   },
+  "day17": {
+    "notes": "This was great because I got to use Z3 which I hadn't used before, and also I got to recall what quines were, which kinda harkens back to my numerical methods and Matt Zucker days."
+  }
 }

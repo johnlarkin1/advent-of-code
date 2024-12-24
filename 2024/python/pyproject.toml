@@ -47,6 +47,7 @@ ruff = "^0.8.1"
 rich = "^13.9.4"
 numpy = "^2.2.0"
 matplotlib = "^3.10.0"
+z3-solver = "^4.13.4.0"
 
 
 [build-system]
