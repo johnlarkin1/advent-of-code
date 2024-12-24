@@ -37,6 +37,10 @@ class Point:
     y: int
     value: Any
 
+    def __lt__(self, other: "Point") -> bool:
+        # Tie-breaking based on x, y, and direction
+        return (self.x, self.y, self.value) < (other.x, other.y, other.value)
+
 
 DirectionType = Literal["east", "west", "north", "south"]
 
@@ -66,3 +70,28 @@ def convert_to_point_matrix(matrix_str: MatrixStr) -> MatrixPoint:
 class Delta:
     dx: int
     dy: int
+
+
+def overlay_directions(matrix: list[list[Point]], directions: list[PointWDirection]) -> list[list[str]]:
+    # Create a copy of the original matrix for overlaying
+    result = [[point.value for point in row] for row in matrix]
+
+    # Map DirectionType to visual symbols
+    direction_map = {"east": ">", "west": "<", "north": "^", "south": "v"}
+
+    # Overlay the directions on the result matrix
+    for direction in directions:
+        # Ensure the direction is within bounds
+        if 0 <= direction.x < len(matrix) and 0 <= direction.y < len(matrix[0]):
+            result[direction.y][direction.x] = direction_map[direction.direction]
+
+    return result
+
+
+def overlay_points(matrix: MatrixStr, path: list[Point]) -> list[list[str]]:
+    for stop in path:
+        # Ensure the direction is within bounds
+        if 0 <= stop.x < len(matrix) and 0 <= stop.y < len(matrix[0]):
+            matrix[stop.y][stop.x] = "O"
+
+    return matrix

@@ -121,5 +121,9 @@
   },
   "day17": {
     "notes": "This was great because I got to use Z3 which I hadn't used before, and also I got to recall what quines were, which kinda harkens back to my numerical methods and Matt Zucker days."
-  }
+  },
+  "day18": {
+    "notes": "part 2 is really not optimized but I'm way behind"
+  },
+  
 }
