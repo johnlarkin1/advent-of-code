@@ -8,6 +8,8 @@ Matrix = List[List[T]]
 MatrixStr = Matrix[str]
 MatrixInt = Matrix[int]
 
+DIRECTION_VECS = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+
 
 @overload
 def parse_input_as_matrix(input_str: str, int_or_str: Literal["int"]) -> MatrixInt: ...
@@ -27,8 +29,17 @@ def matrix_to_string(matrix: Matrix[T]) -> str:
     return "\n".join("".join(map(str, row)) for row in matrix)
 
 
+def point_matrix_to_string(matrix: Matrix["Point"]) -> str:
+    return "\n".join("".join(map(lambda p: p.value, row)) for row in matrix)
+
+
 def is_in_bounds(matrix: Matrix, loc: Coordinate) -> bool:
     return loc[0] >= 0 and loc[0] < len(matrix) and loc[1] >= 0 and loc[1] < len(matrix[0])
+
+
+def is_in_matrix_bounds(matrix: Matrix["Point"], loc: Coordinate):
+    x, y = loc
+    return 0 <= y < len(matrix) and 0 <= x < len(matrix[0])
 
 
 @dataclass(frozen=True)
@@ -63,7 +74,21 @@ MatrixPoint = Matrix[Point]
 
 
 def convert_to_point_matrix(matrix_str: MatrixStr) -> MatrixPoint:
+    point_matrix = []
+    for y, row in enumerate(matrix_str):
+        point_row = []
+        for x, value in enumerate(row):
+            point_row.append(Point(x, y, value))
+        point_matrix.append(point_row)
+    return point_matrix
+
+
+def convert_to_point_matrix_old(matrix_str: MatrixStr) -> MatrixPoint:
     return [[Point(x, y, value) for y, value in enumerate(row)] for x, row in enumerate(matrix_str)]
+
+
+def convert_to_point_matrix_correct(matrix_str: MatrixStr) -> MatrixPoint:
+    return [[Point(x, y, value) for x, value in enumerate(row)] for y, row in enumerate(matrix_str)]
 
 
 @dataclass

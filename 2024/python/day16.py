@@ -19,7 +19,7 @@ from input_util import (
     MatrixPoint,
     Point,
     PointWDirection,
-    convert_to_point_matrix,
+    convert_to_point_matrix_old,
     matrix_to_string,
     parse_input_as_matrix,
 )
@@ -198,7 +198,7 @@ def soln(input_file: Path) -> tuple[int, int]:
     reindeer_map_temp = parse_input_as_matrix(input_file.read_text(), "str")
     print("Found reindeer map:")
     print(matrix_to_string(reindeer_map_temp))
-    reindeer_map = convert_to_point_matrix(reindeer_map_temp)
+    reindeer_map = convert_to_point_matrix_old(reindeer_map_temp)
     start_loc, end_loc = find_starting_and_end_location(reindeer_map)
     print(f"Start loc: {start_loc}")
     print(f"End loc: {end_loc}")
