@@ -1,0 +1,947 @@
+// Gate Network
+digraph {
+	size="14,10"
+	dpi=1200
+	rankdir=LR
+	margin=0
+	subgraph cluster_inputs {
+		rank=same
+		x00 [label=x00 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x01 [label=x01 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x02 [label=x02 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x03 [label=x03 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x04 [label=x04 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x05 [label=x05 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x06 [label=x06 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x07 [label=x07 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x08 [label=x08 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x09 [label=x09 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x10 [label=x10 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x11 [label=x11 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x12 [label=x12 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x13 [label=x13 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x14 [label=x14 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x15 [label=x15 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x16 [label=x16 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x17 [label=x17 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x18 [label=x18 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x19 [label=x19 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x20 [label=x20 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x21 [label=x21 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x22 [label=x22 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x23 [label=x23 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x24 [label=x24 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x25 [label=x25 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x26 [label=x26 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x27 [label=x27 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x28 [label=x28 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x29 [label=x29 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x30 [label=x30 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x31 [label=x31 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x32 [label=x32 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x33 [label=x33 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x34 [label=x34 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x35 [label=x35 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x36 [label=x36 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x37 [label=x37 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x38 [label=x38 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x39 [label=x39 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x40 [label=x40 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x41 [label=x41 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x42 [label=x42 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x43 [label=x43 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		x44 [label=x44 color="#9B59B6" fillcolor="#E8D5E4" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y00 [label=y00 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y01 [label=y01 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y02 [label=y02 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y03 [label=y03 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y04 [label=y04 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y05 [label=y05 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y06 [label=y06 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y07 [label=y07 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y08 [label=y08 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y09 [label=y09 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y10 [label=y10 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y11 [label=y11 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y12 [label=y12 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y13 [label=y13 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y14 [label=y14 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y15 [label=y15 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y16 [label=y16 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y17 [label=y17 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y18 [label=y18 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y19 [label=y19 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y20 [label=y20 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y21 [label=y21 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y22 [label=y22 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y23 [label=y23 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y24 [label=y24 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y25 [label=y25 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y26 [label=y26 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y27 [label=y27 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y28 [label=y28 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y29 [label=y29 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y30 [label=y30 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y31 [label=y31 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y32 [label=y32 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y33 [label=y33 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y34 [label=y34 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y35 [label=y35 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y36 [label=y36 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y37 [label=y37 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y38 [label=y38 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y39 [label=y39 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y40 [label=y40 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y41 [label=y41 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y42 [label=y42 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y43 [label=y43 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+		y44 [label=y44 color="#F1C40F" fillcolor="#FCF3CF" fontsize=8 height=0.2 shape=diamond style=filled width=0.3]
+	}
+	cgm [label="cgm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	ktr -> cgm [color="#00AA00" penwidth=0.5]
+	qkd -> cgm [color="#00AA00" penwidth=0.5]
+	smb [label="smb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y41 -> smb [color="#00AA00" penwidth=0.5]
+	x41 -> smb [color="#00AA00" penwidth=0.5]
+	kmt [label="kmt
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	gst -> kmt [color="#00AA00" penwidth=0.5]
+	gtv -> kmt [color="#00AA00" penwidth=0.5]
+	bfq [label="bfq
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y29 -> bfq [color="#FF0000" penwidth=0.5]
+	x29 -> bfq [color="#FF0000" penwidth=0.5]
+	z07 [label=z07 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	hqs -> z07 [color="#FF0000" penwidth=0.5]
+	jmb -> z07 [color="#FF0000" penwidth=0.5]
+	bdr [label="bdr
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x03 -> bdr [color="#00AA00" penwidth=0.5]
+	y03 -> bdr [color="#00AA00" penwidth=0.5]
+	z30 [label=z30 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	gbs -> z30 [color="#FF0000" penwidth=0.5]
+	rrg -> z30 [color="#FF0000" penwidth=0.5]
+	dqf [label="dqf
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	gbs -> dqf [color="#00AA00" penwidth=0.5]
+	rrg -> dqf [color="#00AA00" penwidth=0.5]
+	wpd [label="wpd
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pgs -> wpd [color="#00AA00" penwidth=0.5]
+	jhf -> wpd [color="#00AA00" penwidth=0.5]
+	z27 [label=z27 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	rbr -> z27 [color="#FF0000" penwidth=0.5]
+	frj -> z27 [color="#FF0000" penwidth=0.5]
+	jrp [label="jrp
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vsr -> jrp [color="#0000FF" penwidth=0.5]
+	gng -> jrp [color="#0000FF" penwidth=0.5]
+	fjs [label="fjs
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	knw -> fjs [color="#0000FF" penwidth=0.5]
+	hwq -> fjs [color="#0000FF" penwidth=0.5]
+	vbf [label="vbf
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	tsp -> vbf [color="#00AA00" penwidth=0.5]
+	vng -> vbf [color="#00AA00" penwidth=0.5]
+	z45 [label=z45 color="#0000FF" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	fpg -> z45 [color="#0000FF" penwidth=0.5]
+	dqg -> z45 [color="#0000FF" penwidth=0.5]
+	vjq [label="vjq
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	wpd -> vjq [color="#0000FF" penwidth=0.5]
+	smb -> vjq [color="#0000FF" penwidth=0.5]
+	z26 [label=z26 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	fcn -> z26 [color="#FF0000" penwidth=0.5]
+	pmf -> z26 [color="#FF0000" penwidth=0.5]
+	hvf [label="hvf
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dqf -> hvf [color="#0000FF" penwidth=0.5]
+	tmm -> hvf [color="#0000FF" penwidth=0.5]
+	ghc [label="ghc
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pmq -> ghc [color="#00AA00" penwidth=0.5]
+	ggj -> ghc [color="#00AA00" penwidth=0.5]
+	dcg [label="dcg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dgk -> dcg [color="#00AA00" penwidth=0.5]
+	ppk -> dcg [color="#00AA00" penwidth=0.5]
+	z22 [label=z22 color="#00AA00" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	y22 -> z22 [color="#00AA00" penwidth=0.5]
+	x22 -> z22 [color="#00AA00" penwidth=0.5]
+	qth [label="qth
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	hqs -> qth [color="#00AA00" penwidth=0.5]
+	jmb -> qth [color="#00AA00" penwidth=0.5]
+	tgg [label="tgg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pmf -> tgg [color="#00AA00" penwidth=0.5]
+	fcn -> tgg [color="#00AA00" penwidth=0.5]
+	rhg [label="rhg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y28 -> rhg [color="#00AA00" penwidth=0.5]
+	x28 -> rhg [color="#00AA00" penwidth=0.5]
+	z05 [label=z05 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	pvb -> z05 [color="#FF0000" penwidth=0.5]
+	jbd -> z05 [color="#FF0000" penwidth=0.5]
+	z13 [label=z13 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	cqb -> z13 [color="#FF0000" penwidth=0.5]
+	pbd -> z13 [color="#FF0000" penwidth=0.5]
+	dgj [label="dgj
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dcg -> dgj [color="#0000FF" penwidth=0.5]
+	vgw -> dgj [color="#0000FF" penwidth=0.5]
+	psh [label="psh
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	mpj -> psh [color="#00AA00" penwidth=0.5]
+	jrp -> psh [color="#00AA00" penwidth=0.5]
+	ggj [label="ggj
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y39 -> ggj [color="#FF0000" penwidth=0.5]
+	x39 -> ggj [color="#FF0000" penwidth=0.5]
+	vvm [label="vvm
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y38 -> vvm [color="#FF0000" penwidth=0.5]
+	x38 -> vvm [color="#FF0000" penwidth=0.5]
+	dqg [label="dqg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rrq -> dqg [color="#00AA00" penwidth=0.5]
+	gjw -> dqg [color="#00AA00" penwidth=0.5]
+	vkh [label="vkh
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y23 -> vkh [color="#00AA00" penwidth=0.5]
+	x23 -> vkh [color="#00AA00" penwidth=0.5]
+	pgs [label="pgs
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x41 -> pgs [color="#FF0000" penwidth=0.5]
+	y41 -> pgs [color="#FF0000" penwidth=0.5]
+	dwm [label="dwm
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jsb -> dwm [color="#0000FF" penwidth=0.5]
+	pqq -> dwm [color="#0000FF" penwidth=0.5]
+	qcj [label="qcj
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x15 -> qcj [color="#00AA00" penwidth=0.5]
+	y15 -> qcj [color="#00AA00" penwidth=0.5]
+	qrq [label="qrq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qnq -> qrq [color="#00AA00" penwidth=0.5]
+	ftn -> qrq [color="#00AA00" penwidth=0.5]
+	rrg [label="rrg
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x30 -> rrg [color="#FF0000" penwidth=0.5]
+	y30 -> rrg [color="#FF0000" penwidth=0.5]
+	rmm [label="rmm
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y12 -> rmm [color="#FF0000" penwidth=0.5]
+	x12 -> rmm [color="#FF0000" penwidth=0.5]
+	z10 [label=z10 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qnq -> z10 [color="#FF0000" penwidth=0.5]
+	ftn -> z10 [color="#FF0000" penwidth=0.5]
+	cmn [label="cmn
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qwd -> cmn [color="#0000FF" penwidth=0.5]
+	ntb -> cmn [color="#0000FF" penwidth=0.5]
+	hct [label="hct
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y01 -> hct [color="#00AA00" penwidth=0.5]
+	x01 -> hct [color="#00AA00" penwidth=0.5]
+	pbq [label="pbq
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	ncj -> pbq [color="#0000FF" penwidth=0.5]
+	dvw -> pbq [color="#0000FF" penwidth=0.5]
+	dcf [label="dcf
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pdq -> dcf [color="#0000FF" penwidth=0.5]
+	rhg -> dcf [color="#0000FF" penwidth=0.5]
+	cmd [label="cmd
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y13 -> cmd [color="#00AA00" penwidth=0.5]
+	x13 -> cmd [color="#00AA00" penwidth=0.5]
+	bgs [label="bgs
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pvc -> bgs [color="#00AA00" penwidth=0.5]
+	tdm -> bgs [color="#00AA00" penwidth=0.5]
+	fcn [label="fcn
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rws -> fcn [color="#0000FF" penwidth=0.5]
+	gwq -> fcn [color="#0000FF" penwidth=0.5]
+	fpg [label="fpg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x44 -> fpg [color="#00AA00" penwidth=0.5]
+	y44 -> fpg [color="#00AA00" penwidth=0.5]
+	cgv [label="cgv
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	wss -> cgv [color="#00AA00" penwidth=0.5]
+	hgw -> cgv [color="#00AA00" penwidth=0.5]
+	chb [label="chb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y04 -> chb [color="#00AA00" penwidth=0.5]
+	x04 -> chb [color="#00AA00" penwidth=0.5]
+	z40 [label=z40 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qbn -> z40 [color="#FF0000" penwidth=0.5]
+	dhr -> z40 [color="#FF0000" penwidth=0.5]
+	z42 [label=z42 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	cpr -> z42 [color="#FF0000" penwidth=0.5]
+	vjq -> z42 [color="#FF0000" penwidth=0.5]
+	tpp [label="tpp
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rhk -> tpp [color="#00AA00" penwidth=0.5]
+	vsn -> tpp [color="#00AA00" penwidth=0.5]
+	z25 [label=z25 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	dwm -> z25 [color="#FF0000" penwidth=0.5]
+	cnn -> z25 [color="#FF0000" penwidth=0.5]
+	nhj [label="nhj
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jrk -> nhj [color="#0000FF" penwidth=0.5]
+	nhp -> nhj [color="#0000FF" penwidth=0.5]
+	pmq [label="pmq
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jnb -> pmq [color="#0000FF" penwidth=0.5]
+	ctv -> pmq [color="#0000FF" penwidth=0.5]
+	pqp [label="pqp
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x42 -> pqp [color="#00AA00" penwidth=0.5]
+	y42 -> pqp [color="#00AA00" penwidth=0.5]
+	knk [label="knk
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dck -> knk [color="#00AA00" penwidth=0.5]
+	qrb -> knk [color="#00AA00" penwidth=0.5]
+	z12 [label=z12 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	vmv -> z12 [color="#FF0000" penwidth=0.5]
+	rmm -> z12 [color="#FF0000" penwidth=0.5]
+	vkv [label="vkv
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vbf -> vkv [color="#0000FF" penwidth=0.5]
+	ksh -> vkv [color="#0000FF" penwidth=0.5]
+	ncj [label="ncj
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y19 -> ncj [color="#00AA00" penwidth=0.5]
+	x19 -> ncj [color="#00AA00" penwidth=0.5]
+	frr [label="frr
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qth -> frr [color="#0000FF" penwidth=0.5]
+	ggw -> frr [color="#0000FF" penwidth=0.5]
+	z24 [label=z24 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qbr -> z24 [color="#FF0000" penwidth=0.5]
+	qsr -> z24 [color="#FF0000" penwidth=0.5]
+	dvw [label="dvw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	grf -> dvw [color="#00AA00" penwidth=0.5]
+	wfs -> dvw [color="#00AA00" penwidth=0.5]
+	qnq [label="qnq
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	csw -> qnq [color="#0000FF" penwidth=0.5]
+	tbc -> qnq [color="#0000FF" penwidth=0.5]
+	qdj [label="qdj
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x31 -> qdj [color="#00AA00" penwidth=0.5]
+	y31 -> qdj [color="#00AA00" penwidth=0.5]
+	qgg [label="qgg
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y20 -> qgg [color="#FF0000" penwidth=0.5]
+	x20 -> qgg [color="#FF0000" penwidth=0.5]
+	cvf [label="cvf
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x32 -> cvf [color="#00AA00" penwidth=0.5]
+	y32 -> cvf [color="#00AA00" penwidth=0.5]
+	pqq [label="pqq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qbr -> pqq [color="#00AA00" penwidth=0.5]
+	qsr -> pqq [color="#00AA00" penwidth=0.5]
+	jnb [label="jnb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vvm -> jnb [color="#00AA00" penwidth=0.5]
+	dnk -> jnb [color="#00AA00" penwidth=0.5]
+	pdq [label="pdq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bst -> pdq [color="#00AA00" penwidth=0.5]
+	stp -> pdq [color="#00AA00" penwidth=0.5]
+	ctv [label="ctv
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y38 -> ctv [color="#00AA00" penwidth=0.5]
+	x38 -> ctv [color="#00AA00" penwidth=0.5]
+	gbs [label="gbs
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bfq -> gbs [color="#FF0000" penwidth=0.5]
+	dcf -> gbs [color="#FF0000" penwidth=0.5]
+	gsm [label="gsm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x12 -> gsm [color="#00AA00" penwidth=0.5]
+	y12 -> gsm [color="#00AA00" penwidth=0.5]
+	qsr [label="qsr
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y24 -> qsr [color="#FF0000" penwidth=0.5]
+	x24 -> qsr [color="#FF0000" penwidth=0.5]
+	z08 [label=z08 color="#00AA00" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	vqp -> z08 [color="#00AA00" penwidth=0.5]
+	frr -> z08 [color="#00AA00" penwidth=0.5]
+	pbd [label="pbd
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y13 -> pbd [color="#FF0000" penwidth=0.5]
+	x13 -> pbd [color="#FF0000" penwidth=0.5]
+	dgk [label="dgk
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jth -> dgk [color="#0000FF" penwidth=0.5]
+	dnn -> dgk [color="#0000FF" penwidth=0.5]
+	jbd [label="jbd
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y05 -> jbd [color="#FF0000" penwidth=0.5]
+	x05 -> jbd [color="#FF0000" penwidth=0.5]
+	rhk [label="rhk
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y00 -> rhk [color="#00AA00" penwidth=0.5]
+	x00 -> rhk [color="#00AA00" penwidth=0.5]
+	z23 [label=z23 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	fhs -> z23 [color="#FF0000" penwidth=0.5]
+	fjs -> z23 [color="#FF0000" penwidth=0.5]
+	z11 [label=z11 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	gtv -> z11 [color="#FF0000" penwidth=0.5]
+	gst -> z11 [color="#FF0000" penwidth=0.5]
+	mfj [label="mfj
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y37 -> mfj [color="#00AA00" penwidth=0.5]
+	x37 -> mfj [color="#00AA00" penwidth=0.5]
+	gtc [label="gtc
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y15 -> gtc [color="#FF0000" penwidth=0.5]
+	x15 -> gtc [color="#FF0000" penwidth=0.5]
+	mqv [label="mqv
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y11 -> mqv [color="#00AA00" penwidth=0.5]
+	x11 -> mqv [color="#00AA00" penwidth=0.5]
+	qrb [label="qrb
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bkg -> qrb [color="#0000FF" penwidth=0.5]
+	ktg -> qrb [color="#0000FF" penwidth=0.5]
+	gtv [label="gtv
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y11 -> gtv [color="#FF0000" penwidth=0.5]
+	x11 -> gtv [color="#FF0000" penwidth=0.5]
+	csw [label="csw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x09 -> csw [color="#00AA00" penwidth=0.5]
+	y09 -> csw [color="#00AA00" penwidth=0.5]
+	rbt [label="rbt
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dhr -> rbt [color="#00AA00" penwidth=0.5]
+	qbn -> rbt [color="#00AA00" penwidth=0.5]
+	z38 [label=z38 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	vvm -> z38 [color="#FF0000" penwidth=0.5]
+	dnk -> z38 [color="#FF0000" penwidth=0.5]
+	vng [label="vng
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cvf -> vng [color="#0000FF" penwidth=0.5]
+	bgq -> vng [color="#0000FF" penwidth=0.5]
+	wfs [label="wfs
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	hpp -> wfs [color="#0000FF" penwidth=0.5]
+	sgw -> wfs [color="#0000FF" penwidth=0.5]
+	z16 [label=z16 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	djg -> z16 [color="#FF0000" penwidth=0.5]
+	kpw -> z16 [color="#FF0000" penwidth=0.5]
+	kpw [label="kpw
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x16 -> kpw [color="#FF0000" penwidth=0.5]
+	y16 -> kpw [color="#FF0000" penwidth=0.5]
+	dgr [label="dgr
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x27 -> dgr [color="#00AA00" penwidth=0.5]
+	y27 -> dgr [color="#00AA00" penwidth=0.5]
+	gwq [label="gwq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y25 -> gwq [color="#00AA00" penwidth=0.5]
+	x25 -> gwq [color="#00AA00" penwidth=0.5]
+	sgw [label="sgw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dgj -> sgw [color="#00AA00" penwidth=0.5]
+	stq -> sgw [color="#00AA00" penwidth=0.5]
+	z33 [label=z33 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	tsp -> z33 [color="#FF0000" penwidth=0.5]
+	vng -> z33 [color="#FF0000" penwidth=0.5]
+	cqb [label="cqb
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	gsm -> cqb [color="#0000FF" penwidth=0.5]
+	sft -> cqb [color="#0000FF" penwidth=0.5]
+	vmv [label="vmv
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	kmt -> vmv [color="#0000FF" penwidth=0.5]
+	mqv -> vmv [color="#0000FF" penwidth=0.5]
+	z36 [label=z36 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qvh -> z36 [color="#FF0000" penwidth=0.5]
+	fpc -> z36 [color="#FF0000" penwidth=0.5]
+	fpc [label="fpc
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	ptf -> fpc [color="#0000FF" penwidth=0.5]
+	psh -> fpc [color="#0000FF" penwidth=0.5]
+	gjw [label="gjw
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	wjm -> gjw [color="#0000FF" penwidth=0.5]
+	cgm -> gjw [color="#0000FF" penwidth=0.5]
+	qbr [label="qbr
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vkh -> qbr [color="#0000FF" penwidth=0.5]
+	fdc -> qbr [color="#0000FF" penwidth=0.5]
+	tsp [label="tsp
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y33 -> tsp [color="#FF0000" penwidth=0.5]
+	x33 -> tsp [color="#FF0000" penwidth=0.5]
+	grf [label="grf
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x19 -> grf [color="#FF0000" penwidth=0.5]
+	y19 -> grf [color="#FF0000" penwidth=0.5]
+	rrq [label="rrq
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x44 -> rrq [color="#FF0000" penwidth=0.5]
+	y44 -> rrq [color="#FF0000" penwidth=0.5]
+	jdj [label="jdj
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pwg -> jdj [color="#00AA00" penwidth=0.5]
+	mbr -> jdj [color="#00AA00" penwidth=0.5]
+	mjj [label="mjj
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	wrm -> mjj [color="#0000FF" penwidth=0.5]
+	cgv -> mjj [color="#0000FF" penwidth=0.5]
+	z35 [label=z35 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	jrp -> z35 [color="#FF0000" penwidth=0.5]
+	mpj -> z35 [color="#FF0000" penwidth=0.5]
+	z31 [label=z31 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	hvf -> z31 [color="#FF0000" penwidth=0.5]
+	pfk -> z31 [color="#FF0000" penwidth=0.5]
+	cpr [label="cpr
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x42 -> cpr [color="#FF0000" penwidth=0.5]
+	y42 -> cpr [color="#FF0000" penwidth=0.5]
+	cdf [label="cdf
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x22 -> cdf [color="#FF0000" penwidth=0.5]
+	y22 -> cdf [color="#FF0000" penwidth=0.5]
+	tmm [label="tmm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x30 -> tmm [color="#00AA00" penwidth=0.5]
+	y30 -> tmm [color="#00AA00" penwidth=0.5]
+	z21 [label=z21 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	bnv -> z21 [color="#FF0000" penwidth=0.5]
+	nhj -> z21 [color="#FF0000" penwidth=0.5]
+	wjm [label="wjm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y43 -> wjm [color="#00AA00" penwidth=0.5]
+	x43 -> wjm [color="#00AA00" penwidth=0.5]
+	z04 [label=z04 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	hfw -> z04 [color="#FF0000" penwidth=0.5]
+	ggh -> z04 [color="#FF0000" penwidth=0.5]
+	z09 [label=z09 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	dnc -> z09 [color="#FF0000" penwidth=0.5]
+	pjb -> z09 [color="#FF0000" penwidth=0.5]
+	z17 [label=z17 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	ppk -> z17 [color="#FF0000" penwidth=0.5]
+	dgk -> z17 [color="#FF0000" penwidth=0.5]
+	stp [label="stp
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y28 -> stp [color="#FF0000" penwidth=0.5]
+	x28 -> stp [color="#FF0000" penwidth=0.5]
+	z15 [label=z15 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	mjj -> z15 [color="#FF0000" penwidth=0.5]
+	gtc -> z15 [color="#FF0000" penwidth=0.5]
+	hpp [label="hpp
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y18 -> hpp [color="#00AA00" penwidth=0.5]
+	x18 -> hpp [color="#00AA00" penwidth=0.5]
+	sjw [label="sjw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x06 -> sjw [color="#00AA00" penwidth=0.5]
+	y06 -> sjw [color="#00AA00" penwidth=0.5]
+	dnc [label="dnc
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	mpr -> dnc [color="#0000FF" penwidth=0.5]
+	thm -> dnc [color="#0000FF" penwidth=0.5]
+	z02 [label=z02 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	mbr -> z02 [color="#FF0000" penwidth=0.5]
+	pwg -> z02 [color="#FF0000" penwidth=0.5]
+	frc [label="frc
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y26 -> frc [color="#00AA00" penwidth=0.5]
+	x26 -> frc [color="#00AA00" penwidth=0.5]
+	thm [label="thm
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	frr -> thm [color="#FF0000" penwidth=0.5]
+	vqp -> thm [color="#FF0000" penwidth=0.5]
+	pwg [label="pwg
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y02 -> pwg [color="#FF0000" penwidth=0.5]
+	x02 -> pwg [color="#FF0000" penwidth=0.5]
+	z41 [label=z41 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	jhf -> z41 [color="#FF0000" penwidth=0.5]
+	pgs -> z41 [color="#FF0000" penwidth=0.5]
+	z00 [label=z00 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	x00 -> z00 [color="#FF0000" penwidth=0.5]
+	y00 -> z00 [color="#FF0000" penwidth=0.5]
+	z18 [label=z18 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	stq -> z18 [color="#FF0000" penwidth=0.5]
+	dgj -> z18 [color="#FF0000" penwidth=0.5]
+	vns [label="vns
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cqb -> vns [color="#00AA00" penwidth=0.5]
+	pbd -> vns [color="#00AA00" penwidth=0.5]
+	dck [label="dck
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x06 -> dck [color="#FF0000" penwidth=0.5]
+	y06 -> dck [color="#FF0000" penwidth=0.5]
+	ggh [label="ggh
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qwg -> ggh [color="#0000FF" penwidth=0.5]
+	bdr -> ggh [color="#0000FF" penwidth=0.5]
+	tnm [label="tnm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x36 -> tnm [color="#00AA00" penwidth=0.5]
+	y36 -> tnm [color="#00AA00" penwidth=0.5]
+	pjb [label="pjb
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x09 -> pjb [color="#FF0000" penwidth=0.5]
+	y09 -> pjb [color="#FF0000" penwidth=0.5]
+	tdm [label="tdm
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	hdw -> tdm [color="#0000FF" penwidth=0.5]
+	tnm -> tdm [color="#0000FF" penwidth=0.5]
+	rwc [label="rwc
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vjq -> rwc [color="#00AA00" penwidth=0.5]
+	cpr -> rwc [color="#00AA00" penwidth=0.5]
+	bnv [label="bnv
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y21 -> bnv [color="#FF0000" penwidth=0.5]
+	x21 -> bnv [color="#FF0000" penwidth=0.5]
+	qkd [label="qkd
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rwc -> qkd [color="#0000FF" penwidth=0.5]
+	pqp -> qkd [color="#0000FF" penwidth=0.5]
+	nhp [label="nhp
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qgg -> nhp [color="#00AA00" penwidth=0.5]
+	pbq -> nhp [color="#00AA00" penwidth=0.5]
+	ggw [label="ggw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y07 -> ggw [color="#00AA00" penwidth=0.5]
+	x07 -> ggw [color="#00AA00" penwidth=0.5]
+	z14 [label=z14 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	hgw -> z14 [color="#FF0000" penwidth=0.5]
+	wss -> z14 [color="#FF0000" penwidth=0.5]
+	cnn [label="cnn
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y25 -> cnn [color="#FF0000" penwidth=0.5]
+	x25 -> cnn [color="#FF0000" penwidth=0.5]
+	z37 [label=z37 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	tdm -> z37 [color="#FF0000" penwidth=0.5]
+	pvc -> z37 [color="#FF0000" penwidth=0.5]
+	qwg [label="qwg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jdt -> qwg [color="#00AA00" penwidth=0.5]
+	rsm -> qwg [color="#00AA00" penwidth=0.5]
+	bkg [label="bkg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y05 -> bkg [color="#00AA00" penwidth=0.5]
+	x05 -> bkg [color="#00AA00" penwidth=0.5]
+	rsm [label="rsm
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	dhh -> rsm [color="#0000FF" penwidth=0.5]
+	jdj -> rsm [color="#0000FF" penwidth=0.5]
+	dnn [label="dnn
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	djg -> dnn [color="#00AA00" penwidth=0.5]
+	kpw -> dnn [color="#00AA00" penwidth=0.5]
+	z20 [label=z20 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qgg -> z20 [color="#FF0000" penwidth=0.5]
+	pbq -> z20 [color="#FF0000" penwidth=0.5]
+	ntv [label="ntv
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	gtc -> ntv [color="#00AA00" penwidth=0.5]
+	mjj -> ntv [color="#00AA00" penwidth=0.5]
+	frj [label="frj
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	tgg -> frj [color="#0000FF" penwidth=0.5]
+	frc -> frj [color="#0000FF" penwidth=0.5]
+	jth [label="jth
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y16 -> jth [color="#00AA00" penwidth=0.5]
+	x16 -> jth [color="#00AA00" penwidth=0.5]
+	fhs [label="fhs
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y23 -> fhs [color="#FF0000" penwidth=0.5]
+	x23 -> fhs [color="#FF0000" penwidth=0.5]
+	jsb [label="jsb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x24 -> jsb [color="#00AA00" penwidth=0.5]
+	y24 -> jsb [color="#00AA00" penwidth=0.5]
+	bst [label="bst
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pgq -> bst [color="#0000FF" penwidth=0.5]
+	dgr -> bst [color="#0000FF" penwidth=0.5]
+	wss [label="wss
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x14 -> wss [color="#00AA00" penwidth=0.5]
+	y14 -> wss [color="#00AA00" penwidth=0.5]
+	jhf [label="jhf
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rbt -> jhf [color="#0000FF" penwidth=0.5]
+	sng -> jhf [color="#0000FF" penwidth=0.5]
+	qbb [label="qbb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y10 -> qbb [color="#00AA00" penwidth=0.5]
+	x10 -> qbb [color="#00AA00" penwidth=0.5]
+	z03 [label=z03 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	rsm -> z03 [color="#FF0000" penwidth=0.5]
+	jdt -> z03 [color="#FF0000" penwidth=0.5]
+	pfk [label="pfk
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y31 -> pfk [color="#FF0000" penwidth=0.5]
+	x31 -> pfk [color="#FF0000" penwidth=0.5]
+	vsr [label="vsr
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	vkv -> vsr [color="#00AA00" penwidth=0.5]
+	bbc -> vsr [color="#00AA00" penwidth=0.5]
+	vsn [label="vsn
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y01 -> vsn [color="#FF0000" penwidth=0.5]
+	x01 -> vsn [color="#FF0000" penwidth=0.5]
+	mbr [label="mbr
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	tpp -> mbr [color="#0000FF" penwidth=0.5]
+	hct -> mbr [color="#0000FF" penwidth=0.5]
+	bgq [label="bgq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qvq -> bgq [color="#00AA00" penwidth=0.5]
+	cdn -> bgq [color="#00AA00" penwidth=0.5]
+	cdn [label="cdn
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y32 -> cdn [color="#FF0000" penwidth=0.5]
+	x32 -> cdn [color="#FF0000" penwidth=0.5]
+	qwd [label="qwd
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x21 -> qwd [color="#00AA00" penwidth=0.5]
+	y21 -> qwd [color="#00AA00" penwidth=0.5]
+	hfw [label="hfw
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y04 -> hfw [color="#FF0000" penwidth=0.5]
+	x04 -> hfw [color="#FF0000" penwidth=0.5]
+	ppk [label="ppk
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y17 -> ppk [color="#FF0000" penwidth=0.5]
+	x17 -> ppk [color="#FF0000" penwidth=0.5]
+	rpq [label="rpq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bfq -> rpq [color="#00AA00" penwidth=0.5]
+	dcf -> rpq [color="#00AA00" penwidth=0.5]
+	spd [label="spd
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	ggh -> spd [color="#00AA00" penwidth=0.5]
+	hfw -> spd [color="#00AA00" penwidth=0.5]
+	jdt [label="jdt
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x03 -> jdt [color="#FF0000" penwidth=0.5]
+	y03 -> jdt [color="#FF0000" penwidth=0.5]
+	ktg [label="ktg
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	jbd -> ktg [color="#00AA00" penwidth=0.5]
+	pvb -> ktg [color="#00AA00" penwidth=0.5]
+	stq [label="stq
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x18 -> stq [color="#FF0000" penwidth=0.5]
+	y18 -> stq [color="#FF0000" penwidth=0.5]
+	gng [label="gng
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x34 -> gng [color="#00AA00" penwidth=0.5]
+	y34 -> gng [color="#00AA00" penwidth=0.5]
+	sng [label="sng
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y40 -> sng [color="#00AA00" penwidth=0.5]
+	x40 -> sng [color="#00AA00" penwidth=0.5]
+	ksh [label="ksh
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x33 -> ksh [color="#00AA00" penwidth=0.5]
+	y33 -> ksh [color="#00AA00" penwidth=0.5]
+	z06 [label=z06 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qrb -> z06 [color="#FF0000" penwidth=0.5]
+	dck -> z06 [color="#FF0000" penwidth=0.5]
+	pmf [label="pmf
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x26 -> pmf [color="#FF0000" penwidth=0.5]
+	y26 -> pmf [color="#FF0000" penwidth=0.5]
+	z01 [label=z01 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	vsn -> z01 [color="#FF0000" penwidth=0.5]
+	rhk -> z01 [color="#FF0000" penwidth=0.5]
+	pgq [label="pgq
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	frj -> pgq [color="#00AA00" penwidth=0.5]
+	rbr -> pgq [color="#00AA00" penwidth=0.5]
+	mpr [label="mpr
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x08 -> mpr [color="#00AA00" penwidth=0.5]
+	y08 -> mpr [color="#00AA00" penwidth=0.5]
+	knw [label="knw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cdf -> knw [color="#00AA00" penwidth=0.5]
+	cmn -> knw [color="#00AA00" penwidth=0.5]
+	qvq [label="qvq
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	wjp -> qvq [color="#0000FF" penwidth=0.5]
+	qdj -> qvq [color="#0000FF" penwidth=0.5]
+	fdc [label="fdc
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	fjs -> fdc [color="#00AA00" penwidth=0.5]
+	fhs -> fdc [color="#00AA00" penwidth=0.5]
+	jmb [label="jmb
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x07 -> jmb [color="#FF0000" penwidth=0.5]
+	y07 -> jmb [color="#FF0000" penwidth=0.5]
+	hdw [label="hdw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qvh -> hdw [color="#00AA00" penwidth=0.5]
+	fpc -> hdw [color="#00AA00" penwidth=0.5]
+	bbc [label="bbc
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x34 -> bbc [color="#FF0000" penwidth=0.5]
+	y34 -> bbc [color="#FF0000" penwidth=0.5]
+	dhr [label="dhr
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	ghm -> dhr [color="#0000FF" penwidth=0.5]
+	ghc -> dhr [color="#0000FF" penwidth=0.5]
+	sft [label="sft
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	rmm -> sft [color="#00AA00" penwidth=0.5]
+	vmv -> sft [color="#00AA00" penwidth=0.5]
+	z43 [label=z43 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	ktr -> z43 [color="#FF0000" penwidth=0.5]
+	qkd -> z43 [color="#FF0000" penwidth=0.5]
+	hqs [label="hqs
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	knk -> hqs [color="#0000FF" penwidth=0.5]
+	sjw -> hqs [color="#0000FF" penwidth=0.5]
+	qbn [label="qbn
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y40 -> qbn [color="#FF0000" penwidth=0.5]
+	x40 -> qbn [color="#FF0000" penwidth=0.5]
+	dnk [label="dnk
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bgs -> dnk [color="#0000FF" penwidth=0.5]
+	mfj -> dnk [color="#0000FF" penwidth=0.5]
+	z39 [label=z39 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	pmq -> z39 [color="#FF0000" penwidth=0.5]
+	ggj -> z39 [color="#FF0000" penwidth=0.5]
+	gst [label="gst
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qrq -> gst [color="#0000FF" penwidth=0.5]
+	qbb -> gst [color="#0000FF" penwidth=0.5]
+	mpj [label="mpj
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y35 -> mpj [color="#FF0000" penwidth=0.5]
+	x35 -> mpj [color="#FF0000" penwidth=0.5]
+	z44 [label=z44 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	rrq -> z44 [color="#FF0000" penwidth=0.5]
+	gjw -> z44 [color="#FF0000" penwidth=0.5]
+	z34 [label=z34 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	vkv -> z34 [color="#FF0000" penwidth=0.5]
+	bbc -> z34 [color="#FF0000" penwidth=0.5]
+	ktr [label="ktr
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y43 -> ktr [color="#FF0000" penwidth=0.5]
+	x43 -> ktr [color="#FF0000" penwidth=0.5]
+	djg [label="djg
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	qcj -> djg [color="#0000FF" penwidth=0.5]
+	ntv -> djg [color="#0000FF" penwidth=0.5]
+	z19 [label=z19 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	wfs -> z19 [color="#FF0000" penwidth=0.5]
+	grf -> z19 [color="#FF0000" penwidth=0.5]
+	ftn [label="ftn
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x10 -> ftn [color="#FF0000" penwidth=0.5]
+	y10 -> ftn [color="#FF0000" penwidth=0.5]
+	pvb [label="pvb
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	chb -> pvb [color="#0000FF" penwidth=0.5]
+	spd -> pvb [color="#0000FF" penwidth=0.5]
+	rbr [label="rbr
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x27 -> rbr [color="#FF0000" penwidth=0.5]
+	y27 -> rbr [color="#FF0000" penwidth=0.5]
+	dhh [label="dhh
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y02 -> dhh [color="#00AA00" penwidth=0.5]
+	x02 -> dhh [color="#00AA00" penwidth=0.5]
+	z32 [label=z32 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	qvq -> z32 [color="#FF0000" penwidth=0.5]
+	cdn -> z32 [color="#FF0000" penwidth=0.5]
+	z28 [label=z28 color="#FF0000" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	bst -> z28 [color="#FF0000" penwidth=0.5]
+	stp -> z28 [color="#FF0000" penwidth=0.5]
+	wrm [label="wrm
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x14 -> wrm [color="#FF0000" penwidth=0.5]
+	y14 -> wrm [color="#FF0000" penwidth=0.5]
+	vgw [label="vgw
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y17 -> vgw [color="#00AA00" penwidth=0.5]
+	x17 -> vgw [color="#00AA00" penwidth=0.5]
+	qvh [label="qvh
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x36 -> qvh [color="#FF0000" penwidth=0.5]
+	y36 -> qvh [color="#FF0000" penwidth=0.5]
+	jrk [label="jrk
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x20 -> jrk [color="#00AA00" penwidth=0.5]
+	y20 -> jrk [color="#00AA00" penwidth=0.5]
+	ptf [label="ptf
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x35 -> ptf [color="#00AA00" penwidth=0.5]
+	y35 -> ptf [color="#00AA00" penwidth=0.5]
+	ntb [label="ntb
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	bnv -> ntb [color="#00AA00" penwidth=0.5]
+	nhj -> ntb [color="#00AA00" penwidth=0.5]
+	rws [label="rws
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cnn -> rws [color="#00AA00" penwidth=0.5]
+	dwm -> rws [color="#00AA00" penwidth=0.5]
+	hwq [label="hwq
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cmn -> hwq [color="#FF0000" penwidth=0.5]
+	cdf -> hwq [color="#FF0000" penwidth=0.5]
+	tbc [label="tbc
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	pjb -> tbc [color="#00AA00" penwidth=0.5]
+	dnc -> tbc [color="#00AA00" penwidth=0.5]
+	ghm [label="ghm
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x39 -> ghm [color="#00AA00" penwidth=0.5]
+	y39 -> ghm [color="#00AA00" penwidth=0.5]
+	vqp [label="vqp
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	x08 -> vqp [color="#FF0000" penwidth=0.5]
+	y08 -> vqp [color="#FF0000" penwidth=0.5]
+	hgw [label="hgw
+OR" color="#0000FF" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	cmd -> hgw [color="#0000FF" penwidth=0.5]
+	vns -> hgw [color="#0000FF" penwidth=0.5]
+	z29 [label=z29 color="#0000FF" fillcolor=white fontsize=10 height=0.3 shape=box style=filled width=0.4]
+	grd -> z29 [color="#0000FF" penwidth=0.5]
+	rpq -> z29 [color="#0000FF" penwidth=0.5]
+	grd [label="grd
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y29 -> grd [color="#00AA00" penwidth=0.5]
+	x29 -> grd [color="#00AA00" penwidth=0.5]
+	pvc [label="pvc
+XOR" color="#FF0000" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	y37 -> pvc [color="#FF0000" penwidth=0.5]
+	x37 -> pvc [color="#FF0000" penwidth=0.5]
+	wjp [label="wjp
+AND" color="#00AA00" fillcolor=white fontsize=8 height=0.2 shape=ellipse style=filled width=0.3]
+	hvf -> wjp [color="#00AA00" penwidth=0.5]
+	pfk -> wjp [color="#00AA00" penwidth=0.5]
+	nodesep=0.12
+	ranksep=0.15
+	overlap=scale
+	splines=polyline
+	pack=true
+}

@@ -48,6 +48,7 @@ rich = "^13.9.4"
 numpy = "^2.2.0"
 matplotlib = "^3.10.0"
 z3-solver = "^4.13.4.0"
+networkx = "^3.4.2"
 
 
 [build-system]
