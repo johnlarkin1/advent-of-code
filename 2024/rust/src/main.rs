@@ -11,6 +11,8 @@ mod day04;
 mod day05;
 mod day06;
 mod day07;
+mod day08;
+mod day09;
 mod solution;
 
 use crate::solution::Solution;
@@ -37,6 +39,8 @@ fn main() {
         "day05" => run_with_timing::<day05::Day05>("day05"),
         "day06" => run_with_timing::<day06::Day06>("day06"),
         "day07" => run_with_timing::<day07::Day07>("day07"),
+        "day08" => run_with_timing::<day08::Day08>("day08"),
+        "day09" => run_with_timing::<day09::Day09>("day09"),
         _ => eprintln!("Day not implemented!"),
     }
 }
